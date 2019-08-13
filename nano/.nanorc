@@ -1,0 +1,20 @@
+# Includes
+include "~/.nano/*.nanorc"
+
+# Colours fg bg
+set titlecolor black,green
+set statuscolor white
+set keycolor cyan
+set functioncolor green
+set numbercolor white
+
+# set smooth scroll
+set smooth 
+# set hide help list
+set nohelp
+# set show linenumbers
+set linenumbers
+# set spell check
+set speller "aspell -c"
+# set tab size
+set tabsize 4
