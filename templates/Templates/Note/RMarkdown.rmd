@@ -1,0 +1,19 @@
+---
+title: "Does the BSc Computer Security and Forensics course develop the skills required by employers in the area of penetration testing?"
+author: "Graham Winchester"
+date: "22 October 2018"
+output: 
+  pdf_document:
+    latex_engine: xelatex
+header-includes:
+  \usepackage{fontspec}
+  \setmainfont{Century Schoolbook}
+bibliography: /home/blix/uni/ref.bib
+csl: /home/blix/uni/harvard-cite-them-right.csl
+toc: true
+indent: true
+urlcolor: black
+linkcolor: black
+fontsize: 12pt
+geometry: margin = 1in
+---
