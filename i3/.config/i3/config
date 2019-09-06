@@ -142,6 +142,10 @@ bindsym $mod+grave workspace $ws20
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
+# move focused workspace between monitors
+bindsym $mod+Ctrl+Right move workspace to output right
+bindsym $mod+Ctrl+Left move workspace to output left
+
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
 bindsym $mod+Shift+2 move container to workspace $ws2
@@ -236,7 +240,7 @@ focus_follows_mouse no
 bar {
   font pango:Source Code Pro Medium 12
   separator_symbol " "
-  status_command i3blocks
+  status_command i3xrocks -c ~/.config/regolith/i3xrocks/config
   tray_output none
   mode hide
   modifier mod1

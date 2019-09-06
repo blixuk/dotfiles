@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# DIR=$1
+# SUBDIR=$2
+# VAR="$(echo *)"
+
+# if [ $# -eq 2 ]; then
+# 	echo $SUBDIR
+# else
+# 	#cd "$HOME"/dotfiles/filetree/"${DIR}"*
+# 	#ls "$HOME"/dotfiles/filetree/"${DIR}"*
+# 	pushd "${DIR}"*
+# fi

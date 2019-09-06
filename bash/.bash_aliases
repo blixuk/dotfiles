@@ -15,13 +15,21 @@ alias manit='man $(history -p \!\!)'						# Man page last command
 
 # CD
 alias ..='cd ..'					# Go up one directory
-alias ,,='cd -'						# Go to previos directory
+alias ,,='cd -'						# Go to previous directory
 
 cdc() { cd ~ && clear; }
 cdl() { cd "$1" && exa; }			# Change directory and List files
 cdll() { cd "$1" && exa -lh; }		# Change directory and List files in long format
 cdla() { cd "$1" && exa -alh; }		# Change directory and List all files in long format
 cdlt() { cd "$1" && tree -L 1; }	# Change directory and List files in  Tree format
+
+cn() {								# Change directory based on number
+	if [ $# -eq 2 ]; then
+		cd ${1}*/${2}*
+	else
+		cd ${1}*
+	fi
+}
 
 mkcd() { mkdir -p "$1"; cd "$1"; }	# Make dir and CD into it
 
@@ -37,7 +45,7 @@ alias ls='exa'						# List
 alias la='exa -alh'					# List All
 alias ll='exa -lh'					# List All Detailed
 alias l1='exa -1'					# List one entry per line
-alias lr='exa -R'					# Recurse into directories
+alias lr='exa -R'					# Recursive into directories
 
 lls() { ll | awk '{if (NR!=1) {print ""$2"\t"$7""}}'; } # List file size
 las() { la | awk '{if (NR!=1) {print ""$2"\t"$7""}}'; } # List all file size
