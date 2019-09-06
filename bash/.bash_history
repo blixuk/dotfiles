@@ -1077,3 +1077,92 @@ installit
 install scrcpy
 snap install scrcpy
 live
+stow templates/
+stow Web/
+sudo stow Web/
+stow regolith/
+git stage
+la
+kitty
+install kitty
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+ls
+cd
+la
+ls
+la
+tree
+htop
+gtop
+gotop
+kitty
+cd .local/
+ls
+cd kitty.app/
+ls
+cd bin/
+ls
+./kitty 
+cd
+ls
+.local/
+ls
+cd .local/
+ls
+cd bin
+ls
+cd
+ln -s ~/.local/kitty.app/bin/kitty ~/.local/bin/
+cp ~/.local/kitty.app/share/applications/kitty.desktop ~/.local/share/applications
+sed -i "s/Icon\=kitty/Icon\=\/home\/$USER\/.local\/kitty.app\/share\/icons\/hicolor\/256x256\/apps\/kitty.png/g" ~/.local/share/applications/kitty.desktop
+touch kitty.conf
+la
+la
+pwd
+c
+alias
+clear
+stow kitty/
+sudo stow kitty/
+stow kitty/
+kitty]#
+kitty
+nano .bashrc 
+fish
+ls
+la
+ls
+cd Downloads/
+cd ..
+ls
+cd Music/
+bash
+cd 
+cd Downloads/
+ks
+ls
+cd /
+cd media/
+cd blix/
+cd STACK\ 1TB\ HDD/
+cd
+ls
+c
+cd
+cd ..
+cd
+ls
+bash
+cd Downloads/
+ls
+bash
+cd
+cd /
+bash
+bash
+cd
+cd Downloads
+ls
+cd datacurator-filetree-master/
+ls
+bash

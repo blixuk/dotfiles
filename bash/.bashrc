@@ -42,9 +42,22 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
+	#										Username         @ Host			:               Path          $ 
 	#PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-	PS1='\[\033[01;32m\]\u:\[\033[01;34m\]\W\[\033[00m\]\$ '
-	# 			  Username: 			 CWD		 	 $
+	
+	# 			   Username: 				CWD		 	      $
+	#PS1='\[\033[01;32m\]\u:\[\033[01;34m\]\W\[\033[00m\]\$ '
+	#Username: \u
+	#Host: \h
+	#Working Directory: \w | Clean: \W
+	# \$
+	#Shell: \s
+	#Version \v
+	#Align Rigt: $(printf "%$(($(tput cols)+${COLUMNS}-25))s")
+	#Align Right Based on Directory lenth and date and time: 
+	# $(printf "%$(($(tput cols)-$(echo -n "$(echo "\w \d \t [  ]")" | wc -c ) ))s")
+
+	PS1='\n\[\033[01;32m\]\w $(printf "%$(($(tput cols)-$(echo -n "$(echo "\w \d \t [  ]")" | wc -c ) ))s") \[\033[00;02m\][\d \t] \n\[\033[00m\]> '
 else
 	PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
