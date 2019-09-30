@@ -168,3 +168,7 @@ if [ -f ~/.bash_aliases ]; then
 fi;
 
 test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/blix/.sdkman"
+[[ -s "/home/blix/.sdkman/bin/sdkman-init.sh" ]] && source "/home/blix/.sdkman/bin/sdkman-init.sh"

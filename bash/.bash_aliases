@@ -93,6 +93,11 @@ function repeat() {
 	done
 }
 
+#x3270
+alias 3270='x3270 -efont 3270-20'
+alias 3270scale='x3270 -oversize 150x100'
+alias 3270hidpi='x3270 -oversize 150x100 -efont 3270-20'
+
 # SCRIPT
 alias dm='~/.scripts/dmenu.sh'
 alias dml='~/.scripts/dmenu_list.sh'
