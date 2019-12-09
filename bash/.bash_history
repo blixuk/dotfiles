@@ -1166,3 +1166,35 @@ ls
 cd datacurator-filetree-master/
 ls
 bash
+ls
+git clone https://github.com/blixuk/filetree.git
+cd filetree/
+ls
+la
+tree
+sudo apt install tree
+tree
+tree > README.md
+git stage *
+git commit *
+git push *
+git commit *
+git commit
+git push
+git stage
+git stage *
+git commit
+git push
+cd ..
+cd
+git clone https://github.com/blixuk/dotfiles.git
+cd .dotfiles/
+stow
+sudo apt install stow
+clear
+ls
+stow bash
+stow micro/
+stow nano/
+stow scripts/
+stow templates/

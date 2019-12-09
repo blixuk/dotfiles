@@ -82,9 +82,9 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # EXPORT
-VISUAL=micro;
+VISUAL=nano;
 export VISUAL
-EDITOR=micro;
+EDITOR=nano;
 export EDITOR
 
 # ALIAS
